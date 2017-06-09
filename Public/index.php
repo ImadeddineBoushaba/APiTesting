@@ -82,7 +82,7 @@ $app->get('/jsontest/{FirstName}/{LastName}',function($Request,$Response ,$args)
  	$data = $Request ->getParsedBody();
  	$username=$data['UserName'];
  	$password=$data['Password'];
- 	$Response->getBody() ->write("$username your password is $password IS DELETE ");
+ 	$Response->getBody() ->write(" $username your password is $password IS DELETE for testing ");
  });
 
 $app->run();
